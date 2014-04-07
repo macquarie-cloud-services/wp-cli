@@ -28,4 +28,4 @@ end
 
 link node['wp-cli']['link'] do
   to node['wp-cli']['bin']
-end if node['wp']['link']
+end if node['wp-cli']['link']
