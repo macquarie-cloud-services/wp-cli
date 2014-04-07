@@ -22,7 +22,7 @@ bash 'install wp-cli' do
   code './installer.sh'
   cwd node['wp-cli']['dir']
   environment 'INSTALL_DIR' => node['wp-cli']['dir'],
-              'VERSION'     => node['wp-clie']['version']
+              'VERSION'     => node['wp-cli']['version']
   creates node['wp-cli']['bin']
 end
 
