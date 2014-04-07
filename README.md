@@ -48,8 +48,10 @@ Contributing
 5. Run the tests, ensuring they all pass
 6. Submit a Pull Request using Github
 
-License and Authors
--------------------
-Author: Rubem Nakamura
+Author(s)
+---------
+Rubem Nakamura
 
-MIT LICENSE
+License
+-------
+[MIT LICENSE](http://opensource.org/licenses/MIT)
