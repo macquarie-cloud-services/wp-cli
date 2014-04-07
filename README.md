@@ -19,12 +19,6 @@ Attributes
     <td><tt>/usr/share/wp-cli</tt></td>
   </tr>
   <tr>
-    <td><tt>['wp-cli']['version']</tt></td>
-    <td>String</td>
-    <td>The desired wp-cli version </td>
-    <td><tt>@stable</tt></td>
-  </tr>
-  <tr>
     <td><tt>['wp-cli']['link']</tt></td>
     <td>String</td>
     <td>The binary link</td>
