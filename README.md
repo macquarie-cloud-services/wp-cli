@@ -1,4 +1,4 @@
-wp-cli Cookbook
+wp-cli Chef Cookbook
 ===============
 Installs [WP-CLI](http://wp-cli.org/).
 
