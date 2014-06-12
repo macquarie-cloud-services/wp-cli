@@ -16,7 +16,7 @@ remote_file "#{node['wp-cli']['dir']}/wp-cli.phar" do
   action :create_if_missing
 end
 
-node['wp-cli']['bin'] = ::File.join(node['wp-cli']['dir'], 'wp-cli.phar')
+node.set['wp-cli']['bin'] = ::File.join(node['wp-cli']['dir'], 'wp-cli.phar')
 
 link node['wp-cli']['link'] do
   to node['wp-cli']['bin']
