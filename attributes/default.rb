@@ -6,5 +6,5 @@
 # License: MIT
 #
 
-default['wp-cli']['dir'] = '/usr/share/wp-cli'
-default['wp-cli']['link'] = '/usr/bin/wp'
+default['wp-cli']['dir'] = '/usr/local/share/wp-cli'
+default['wp-cli']['link'] = '/usr/local/bin/wp'
