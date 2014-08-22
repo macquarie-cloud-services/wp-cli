@@ -16,13 +16,13 @@ Attributes
     <td><tt>['wp-cli']['dir']</tt></td>
     <td>String</td>
     <td>The installation dir</td>
-    <td><tt>/usr/share/wp-cli</tt></td>
+    <td><tt>/usr/local/share/wp-cli</tt></td>
   </tr>
   <tr>
     <td><tt>['wp-cli']['link']</tt></td>
     <td>String</td>
     <td>The binary link</td>
-    <td><tt>/usr/bin/wp</tt></td>
+    <td><tt>/usr/local/bin/wp</tt></td>
   </tr>
 </table>
 
