@@ -39,6 +39,43 @@ Just include `wp-cli` in your node's `run_list`:
 }
 ```
 
+Definitions
+===========
+
+The cookbook provides a few definitions.
+
+wp\_cli
+-------
+
+Execute WP-CLi with the desired command and arguments.
+
+### Parameters:
+
+* `name` - WP-CLI command.
+* `args` - Hash with the command arguments
+* `cwd` - WordPress installation path.
+* `user` - Execute WP-CLI with user privileges.
+
+### Examples:
+
+Execute `wp core is-installed` over the WordPress installation directory.
+
+```
+    wp_cli 'core is-installed' do
+      args(
+        'path' => '/path/to/wordpress/'
+     )
+    end
+```
+
+or
+
+```
+    wp_cli 'core is-installed' do
+      cwd '/path/to/wordpress/'
+    end
+```
+
 Contributing
 ------------
 1. Fork the repository on Github
