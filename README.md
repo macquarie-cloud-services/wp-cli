@@ -46,7 +46,7 @@ This cookbook includes an LWRP for execute `wp-cli` commands
 
 ### `wp_cli_command`
 
-Execute WP-CLi with the desired command and arguments.
+Execute WP-CLI with the desired command and arguments.
 
 ### Parameters:
 
