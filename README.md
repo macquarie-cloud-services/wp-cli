@@ -61,7 +61,7 @@ Execute WP-CLi with the desired command and arguments.
 Execute `wp core is-installed` over the WordPress installation directory.
 
 ```
-    wp_cli 'core is-installed' do
+    wp_cli_command 'core is-installed' do
       args(
         'path' => '/path/to/wordpress/',
         'allow-root' => ''
@@ -72,7 +72,7 @@ Execute `wp core is-installed` over the WordPress installation directory.
 or
 
 ```
-    wp_cli 'core is-installed' do
+    wp_cli_command 'core is-installed' do
       args(
         'allow-root' => ''
       )
