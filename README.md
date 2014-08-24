@@ -50,8 +50,9 @@ Execute WP-CLi with the desired command and arguments.
 
 ### Parameters:
 
-* `name` - WP-CLI command.
+* `command` - WP-CLI command.
 * `args` - Hash with the command arguments
+* `stdin` - Free text to the standard input (see `wp core config --extra-php`)
 * `cwd` - WordPress installation path.
 * `user` - Execute WP-CLI with under the desired user privileges.
 
