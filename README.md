@@ -39,6 +39,47 @@ Just include `wp-cli` in your node's `run_list`:
 }
 ```
 
+Resources / Providers
+---------------------
+
+This cookbook includes an LWRP for execute `wp-cli` commands
+
+### `wp_cli_command`
+
+Execute WP-CLI with the desired command and arguments.
+
+### Parameters:
+
+* `command` - WP-CLI command.
+* `args` - Hash with the command arguments
+* `stdin` - Free text to the standard input (see `wp core config --extra-php`)
+* `cwd` - WordPress installation path.
+* `user` - Execute WP-CLI with under the desired user privileges.
+
+### Examples:
+
+Execute `wp core is-installed` over the WordPress installation directory.
+
+```
+    wp_cli_command 'core is-installed' do
+      args(
+        'path' => '/path/to/wordpress/',
+        'allow-root' => ''
+      )
+    end
+```
+
+or
+
+```
+    wp_cli_command 'core is-installed' do
+      args(
+        'allow-root' => ''
+      )
+      cwd '/path/to/wordpress/'
+    end
+```
+
 Contributing
 ------------
 1. Fork the repository on Github
