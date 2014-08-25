@@ -1,6 +1,12 @@
 wp-cli CHANGELOG
 ================
 
+0.1.3
+-----
+
+- [Maks3w] Recipe for bash completition.
+- [Maks3w] Create a chef definition for abstract the use of wp-cli
+
 0.1.2
 -----
 - [Maks3w] Use /usr/local for binaries and share
