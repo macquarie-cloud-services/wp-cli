@@ -9,6 +9,7 @@ action :execute do
     command "#{node['wp-cli']['bin']} #{command}#{args_str}#{stdin}"
     cwd new_resource.cwd
     user new_resource.user
+    sensitive :true
   end
 end
 
