@@ -1,6 +1,11 @@
 wp-cli CHANGELOG
 ================
 
+0.1.4
+-----
+
+- [jespada] Enhance/hide sensitive data
+
 0.1.3
 -----
 
