@@ -5,10 +5,13 @@ action :execute do
 
   args_str = args_to_s(args)
 
+  use_inline_resources
+
   execute "wp-cli #{command}" do
     command "#{node['wp-cli']['bin']} #{command}#{args_str}#{stdin}"
     cwd new_resource.cwd
     user new_resource.user
+    group new_resource.group
     sensitive new_resource.sensitive
   end
 end
