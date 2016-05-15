@@ -1,3 +1,5 @@
+use_inline_resources
+
 action :execute do
   args = new_resource.args
   command = new_resource.command
