@@ -1,11 +1,11 @@
+use_inline_resources
+
 action :execute do
   args = new_resource.args
   command = new_resource.command
   stdin = new_resource.stdin
 
   args_str = args_to_s(args)
-
-  use_inline_resources
 
   execute "wp-cli #{command}" do
     command "#{node['wp-cli']['bin']} #{command}#{args_str}#{stdin}"
