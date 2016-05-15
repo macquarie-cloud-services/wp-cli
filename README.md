@@ -55,6 +55,7 @@ Execute WP-CLI with the desired command and arguments.
 * `stdin` - Free text to the standard input (see `wp core config --extra-php`)
 * `cwd` - WordPress installation path.
 * `user` - Execute WP-CLI with under the desired user privileges.
+* `group` - Execute WP-CLI under the desired group privileges.
 
 ### Examples:
 
